@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text List</title>
+    <style>
+        /* Add some basic styling */
+        body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        li {
+          margin-bottom: 10px;
+        }
+        input[type="text"] {
+          width: 200px;
+          margin-right: 10px;
+        }
+        .warningElement {
+          display: inline-block;
+          margin-top: 10px;
+          color: red;
+        }
+        .messageElement {
+          display: inline-block;
+          margin-top: 10px;
+          color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter names to keep displayed</h1>
+    <form id="textForm">
+        <ul id="textList">
+            <!-- Initial text input -->
+            <li><input type="text" name="textItem" placeholder="Enter text"></li>
+        </ul>
+        <button type="button" id="addInput">Add Text</button>
+        <button type="button" id="removeInput">Remove Text</button>
+        <button type="submit" id="submitInputs">Apply</button>
+    </form>
+    <div id="warningSection"></div>
+    <div id="messageSection"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
