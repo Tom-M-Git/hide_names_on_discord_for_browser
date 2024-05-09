@@ -17,6 +17,7 @@ let originalContent = '';
 let notContainsString = '';
 let numberOfElements = 0;
 let sendTextContentToValidate = '';
+let executedCount = 0;
 
 let debugMode = false;
 function consoleLogFunc(...args) {if (debugMode) {console.log(args)}};
@@ -193,9 +194,15 @@ function executeEventListener () {
 		    });
 		    namesToDisplay = newNamesToDisplay;
 		    executeMainCode();
+		    executedCount++;
 		    console.log("Applied Name: ", namesToDisplay); // Log the new array
-		    setTimeout(function(){sendResponse({ message: namesToDisplay.join(", ")});}, 1000);
+		    setTimeout(function(){sendResponse({ message: namesToDisplay, count: executedCount});}, 1000);
 		    return true; // Indicate that you will respond asynchronously
+		};
+		if (request == "reload") {
+			console.log("reload request received");
+			sendResponse("reloading");
+			location.reload();
 		};
 	});
 };

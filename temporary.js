@@ -12,16 +12,12 @@ warningForURL.id = "warningForURL";
 warningForURL.innerHTML = "Only works when Discord server tab is active!";
 const messageForReload = document.createElement("span");
 messageForReload.className = "messageElement";
-const message01 = "(Previously hidden names are kept hidden until next occurrence)";
-const message02 = "Reload the page to fully refresh. (Previously hidden names are kept hidden until next occurrence)";
-messageForReload.innerHTML = message01;
-const messageForResponse = document.createElement("div");
+messageForReload.innerHTML = "Reload the page to fully refresh. (Previously hidden names are kept hidden until next occurrence)";
+const messageForResponse = document.createElement("span");
 messageForResponse.className = "messageElement";
-messageForResponse.setAttribute("style", "font-size: 150%");
 messageForResponse.innerHTML = "Applied.";
-const nameList = document.createElement("div");
+const nameList = document.createElement("span");
 nameList.className = "messageElement";
-nameList.setAttribute("style", "font-size: 120%");
 const buttonToReloadSection = document.createElement("div");
 buttonToReloadSection.id = "buttonToReloadSection";
 buttonToReloadSection.innerHTML = "<button type='reset' id='buttonToReload'>Reset All</button><span class='notice'>(Reloads the page.)</span>";
@@ -81,8 +77,7 @@ function sendMessageToTab(tabId, message, callback) {
 	chrome.tabs.sendMessage(tabId, message, function(response) {
 		if (chrome.runtime.lastError) {
 			// Handle the error
-			console.log('Error sending message:', chrome.runtime.lastError.message);
-			warningElement.innerHTML = "<span class='warningElement'>Error occurred. Try reloading the page.</span>";
+			console.error('Error sending message:', chrome.runtime.lastError.message);
 		} else {
 			// Call the callback function with the response
 			callback(response);
@@ -108,14 +103,13 @@ function executeEventListener() {
 				sendMessageToTab(activeTab.id, { data: textItemsFiltered }, function(response) {
 					console.log('Message sent. Response: ', response);
 					if (response){
-						nameList.innerHTML = "<span style='display: inline-block; margin-bottom: 5px'>Displayed Name:</span></br>" + response.message.join(",</br>");
+						nameList.innerHTML = "</br>Displayed Name: " + response.message;
 						messageElement.appendChild(messageForResponse);
 						messageElement.appendChild(nameList);
 					};
 					if (response && response.count > 1){
 						messageForReload.className = "warningElement";
-						messageForReload.innerHTML = message02;
-					} else {messageForReload.innerHTML = message01;};
+					};
 					warningElement.appendChild(messageForReload);
 					/* Adds Reload Button */
 					formElement.appendChild(buttonToReloadSection);
@@ -125,7 +119,7 @@ function executeEventListener() {
 					});
 				});
 			  } else {
-				console.log('Error: Invalid or non-Discord tab.');
+				console.error('Error: Invalid or non-Discord tab.');
 			  }
 		});
 	});
