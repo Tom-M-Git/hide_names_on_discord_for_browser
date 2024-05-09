@@ -3,7 +3,8 @@
     "name": "Hide Names on Discord — for Browser",
     "version": "0.1",
     "version_name": "0.1 beta",
-    "description": "Description of your extension",
+    "description": "Hides and censors user names on Discord servers, other than names specified, while keeping the first few letters visible + adding a unique number to the end of each.",
+    "author": "Tomoaki Morioka",
     "permissions": [
         "activeTab",
         "scripting",
