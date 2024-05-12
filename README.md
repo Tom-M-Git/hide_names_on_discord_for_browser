@@ -2,12 +2,16 @@
 ![GitHub License](https://img.shields.io/github/license/Tom-M-Git/hide_names_on_discord_for_browser)
 ![GitHub Release](https://img.shields.io/github/v/release/Tom-M-Git/hide_names_on_discord_for_browser)
 
+*Currently in testing beta.
 
-This is a Chrome extension built in simple JavaScript used on Discord to hide/censor user names with asterisks (`*`) displaying the first few letters and adding a number unique to each different name to the end, while keeping speficied names displayed. It is only available on **the browser version** of Discord.
+This is a free Chrome extension built in simple JavaScript used on Discord to hide/censor user names with asterisks (`*`) displaying the first few letters and adding a number unique to each different name to the end, while keeping speficied names displayed. It is only available on **the browser version** of Discord. (Tested in Chrome ver. 124.0.6367.201)
 
 Especially useful for screen recording on Discord when other people's privacy is concerned.
 
 Hidden names e.g. `NameOnDiscord`, will look like this: `Na***********(1286)`.
+
+![hide_names_on_discord_for_browser_intro](hide_names_on_discord_for_browser_intro.gif)
+*Video/image blurs icons for privacy but it's not part of the app.
 
 - [Hide Names on Discord — for Browser](#hide-names-on-discord--for-browser)
 	- [Main features](#main-features)
