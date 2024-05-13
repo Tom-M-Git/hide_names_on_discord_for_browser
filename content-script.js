@@ -19,7 +19,7 @@ let numberOfElements = 0;
 let sendTextContentToValidate = '';
 let executedCount = 0;
 
-let debugMode = true;
+let debugMode = false;
 function consoleLogFunc(...args) {if (debugMode) {console.log(args)}};
 
 async function waitForDOM() {
