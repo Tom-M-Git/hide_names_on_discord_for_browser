@@ -53,8 +53,10 @@ The logic is simple: It first checks if the original name matches a specific str
 
 4. Also if there's an excesive level of activity on your computer or such a large number of names being detected, while the extension is running, the names might sometimes show up uncensored in a blink.
 
-## Known issues
+5. Names which are specified are also hidden in _mentions_ that is expected.
 
+## Known issues
+In very rare cases some names won't be hidden but the matching pattern for it is still unknown.
 
 ## License
 `GPL-3.0`<br>

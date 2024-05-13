@@ -66,16 +66,17 @@ function prepareHideNames(chatNames, audienceNames, memberListNames, replyNames,
 
 	function hideNames(element) {
 		sourceContent = element.textContent;
-		originalContent = sourceContent.replace(/\s/g, '');
 		notContainsString = namesToDisplay.every(string => {
 			const trimmedString = string.trim();
-			const trimmedOriginalContent = originalContent.replace(/\s/g, '');
-			return trimmedOriginalContent !== trimmedString;
+			const trimmedSourceContent = sourceContent.trim();
+			consoleLogFunc("namesToDisplay.string: ", string, "trimmedString: ", trimmedString, "trimmedSourceContent: ", trimmedSourceContent, "notContainsString: ", trimmedSourceContent != trimmedString);
+			return trimmedSourceContent != trimmedString;
 		});
 		
-
-
+		
+		
 		if (notContainsString) {
+			originalContent = sourceContent.replace(/\s/g, '');
 
 
 			if (verification(originalContent)) {
