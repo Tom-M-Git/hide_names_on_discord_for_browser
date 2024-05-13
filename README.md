@@ -4,7 +4,7 @@
 
 *Currently in testing beta.
 
-This is a free Chrome extension built in simple JavaScript used on Discord to hide/censor user names with asterisks (`*`) displaying the first few letters and adding a number unique to each different name to the end, while keeping speficied names displayed. It is only available on **the browser version** of Discord. (Tested in Chrome ver. 124.0.6367.201)
+This is a free Chrome extension built in simple JavaScript used on Discord to hide/censor user names with asterisks (`*`) displaying the first few letters and adding a number unique to each different name to the end, while keeping specified names displayed. It is only available on **the browser version** of Discord. (Tested in Chrome ver. 124.0.6367.201)
 
 Especially useful for screen recording on Discord when other people's privacy is concerned.
 
