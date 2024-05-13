@@ -17,6 +17,7 @@ Hidden names e.g. `NameOnDiscord`, will look like this: `Na***********(1286)`.
 	- [Main features](#main-features)
 	- [Usage](#usage)
 	- [Limitation](#limitation)
+	- [Known issues](#known-issues)
 	- [License](#license)
 	- [Credit](#credit)
 
@@ -51,6 +52,9 @@ The logic is simple: It first checks if the original name matches a specific str
 3. If there are a massive number of user names—including the same names—like, say `10,000` entries, detected at once on your server (it actually happens), it might lead to high CPU/memory usage.
 
 4. Also if there's an excesive level of activity on your computer or such a large number of names being detected, while the extension is running, the names might sometimes show up uncensored in a blink.
+
+## Known issues
+- As soon as the input is **included** in any name then it's going to be displayed. I'm currently fixing it.
 
 ## License
 `GPL-3.0`<br>
