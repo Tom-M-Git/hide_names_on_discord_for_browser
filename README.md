@@ -1,6 +1,6 @@
 # Hide Names on Discord — for Browser
-![GitHub License](https://img.shields.io/github/license/Tom-M-Git/hide_names_on_discord_for_browser)
 ![GitHub Release](https://img.shields.io/github/v/release/Tom-M-Git/hide_names_on_discord_for_browser)
+![GitHub License](https://img.shields.io/github/license/Tom-M-Git/hide_names_on_discord_for_browser)
 
 *Currently in testing beta.
 
@@ -15,6 +15,7 @@ Hidden names e.g. `NameOnDiscord`, will look like this: `Na***********(1286)`.
 
 - [Hide Names on Discord — for Browser](#hide-names-on-discord--for-browser)
 	- [Main features](#main-features)
+	- [Installation](#installation)
 	- [Usage](#usage)
 	- [Limitation](#limitation)
 	- [Known issues](#known-issues)
@@ -33,6 +34,9 @@ Hidden names e.g. `NameOnDiscord`, will look like this: `Na***********(1286)`.
 
 When specified names to display, all other user names are going to be censored with asterisks `*`.
 A unique sequence of numbers is added to the end of each name. The same name will always have the name number.
+
+## Installation
+Go to the [Chrome extension page](https://chromewebstore.google.com/detail/lhehmhaancalbdmbleclceijldnfkkbp) on Chrome Web Store and add the extension to your browser.
 
 ## Usage
 After installing the extension, open a tab accessing `discord.som/channels/`, then open the extension popup menu, type in names you want to keep displayed and press the Apply button.
@@ -63,4 +67,4 @@ In very rare cases some names won't be hidden but the matching pattern for it is
 Licensed under GNU General Public License v3.0.
 
 ## Credit
-Morioka, Tomoaki (森岡 知映.) (2024-05-10).
+Morioka, Tomoaki (森岡 知映.) (2024).
