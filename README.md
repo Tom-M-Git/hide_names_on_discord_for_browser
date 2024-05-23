@@ -1,6 +1,7 @@
 # Hide Names on Discord — for Browser
 ![GitHub Release](https://img.shields.io/github/v/release/Tom-M-Git/hide_names_on_discord_for_browser)
-![GitHub License](https://img.shields.io/github/license/Tom-M-Git/hide_names_on_discord_for_browser)
+[![GitHub License](https://img.shields.io/github/license/Tom-M-Git/hide_names_on_discord_for_browser?label=license)](./LICENSE)
+
 
 *Currently in testing beta.
 
