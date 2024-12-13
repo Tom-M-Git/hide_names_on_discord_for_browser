@@ -68,4 +68,4 @@ In very rare cases some names won't be hidden but the matching pattern for it is
 Licensed under GNU General Public License v3.0.
 
 ## Credit
-Morioka, Tomoaki (森岡 知映.) (2024).
+Tom. M. (2024).
