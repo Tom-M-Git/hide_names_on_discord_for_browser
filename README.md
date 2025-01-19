@@ -1,6 +1,6 @@
 # Hide Names on Discord — for Browser
 ![GitHub Release](https://img.shields.io/github/v/release/Tom-M-Git/hide_names_on_discord_for_browser)
-[![GitHub License](https://img.shields.io/github/license/Tom-M-Git/hide_names_on_discord_for_browser?label=license)](./LICENSE)
+
 
 ## Important Notice on the license
 The license is now changed from GPLv3 to MIT starting from version 2.0.0.
