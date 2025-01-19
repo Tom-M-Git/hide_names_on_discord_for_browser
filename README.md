@@ -2,6 +2,8 @@
 ![GitHub Release](https://img.shields.io/github/v/release/Tom-M-Git/hide_names_on_discord_for_browser)
 [![GitHub License](https://img.shields.io/github/license/Tom-M-Git/hide_names_on_discord_for_browser?label=license)](./LICENSE)
 
+## Important Notice on the license
+The license is now changed from GPLv3 to MIT starting from version 2.0.0.
 
 *Currently in testing beta.
 
@@ -64,8 +66,8 @@ The logic is simple: It first checks if the original name matches a specific str
 In very rare cases some names won't be hidden but the matching pattern for it is still unknown.
 
 ## License
-`GPL-3.0`<br>
-Licensed under GNU General Public License v3.0.
+`MIT`<br>
+Licensed under MIT.
 
 ## Credit
 Tom. M. (2024).
