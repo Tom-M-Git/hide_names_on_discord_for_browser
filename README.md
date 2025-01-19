@@ -3,7 +3,7 @@
 
 
 ## Important Notice on the license
-The license is now changed from GPLv3 to MIT starting from version 2.0.0.
+The license is now changed from GPLv3 to MIT starting from version 1.0.0.
 
 *Currently in testing beta.
 
